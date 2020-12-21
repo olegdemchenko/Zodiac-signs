@@ -2,6 +2,8 @@ const table = ['91%','81%','72%','81%','97%','84%','83%','76%','92%','82%','82%'
 
 const zodiacs = ['Овен','Телец','Близнецы','Рак','Лев','Дева','Весы','Скорпион','Стрелец','Козерог','Водолей','Рыбы'];
 
+const signs = ['♈', '♉', '♊', '♋', '♌', '♍', '♎', '♏', '♐', '♑', '♒', '♓'];
+
 function getZodiac(user){
     // 1993-07-20T09:44:18.674Z
     const dob = new Date(user.dob.date);
@@ -12,6 +14,11 @@ function getZodiac(user){
         gender : user.gender
     };
 }
+
+export const getZodiacSign = (user) => {
+  const zodiac = getZodiac(user);
+  return signs[zodiac.id];
+};
 
 export function getCompatibility(users){
     const xy = {

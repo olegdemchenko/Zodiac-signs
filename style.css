@@ -1,0 +1,23 @@
+.image-wrapper {
+  display: inline-block;
+}
+.sign-field {
+    text-align: center;
+    font-size: 28px;
+}
+.new-pair {
+  width: 150px;
+  height: 40px;
+}
+.percents-container {
+  display: inline-block;
+}
+.love-button {
+  width: 150px;
+  height: 40px; 
+  font-size: 24px;
+  color: red;
+}
+.hidden {
+  display: none;
+}
